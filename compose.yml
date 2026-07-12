@@ -1,8 +1,9 @@
-services:
+7services:
   windows:
     image: dockurr/windows
     container_name: windows
     environment:
+    DISK_SIZE: "1T"    
       VERSION: "11"
     devices:
       - /dev/kvm
